@@ -1,0 +1,91 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    animation: breathing 6s ease-in-out infinite;
+    min-height: 100vh; /* Ensures full viewport height */
+    transition: background 1s ease; /* Smooth transition for background image */
+}
+
+@keyframes breathing {
+    0%, 100% {
+        background-size: 105%; /* Creates a subtle zooming effect */
+    }
+    50% {
+        background-size: 110%; /* Increases zoom effect at 50% */
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+}
+
+.logo {
+    width: 10vw;
+    max-width: 200px; /* Maximum size for larger screens */
+    margin-bottom: 20px;
+    transition: width 0.5s ease; /* Smooth transition for logo size */
+}
+
+.text {
+    font-size: 1vw;
+    max-font-size: 1rem; /* Maximum size for larger screens */
+    transition: font-size 0.5s ease; /* Smooth transition for text size */
+    font-weight: 400;
+    text-align: center;
+    word-wrap: break-word;
+    color: #936D54;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1400px) {
+    body {
+        background: url('bg2.png') no-repeat center center fixed;
+        background-size: cover; /* Ensures the background image covers the entire viewport */
+    }
+
+    .logo {
+        width: 30vw; /* Adjust logo size for smaller screens */
+    }
+
+    .text {
+        font-size: 0.8vw; /* Adjust text size for smaller screens */
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        background: url('phone.png') no-repeat center center fixed;
+        background-size: cover; /* Ensures the background image covers the entire viewport */
+    }
+
+    .logo {
+        width: 30vw; /* Adjust logo size for smaller screens */
+    }
+
+    .text {
+        font-size: 1vw; /* Adjust text size for smaller screens */
+    }
+}
