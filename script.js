@@ -6,7 +6,7 @@ function adjustSizes() {
     // Adjust logo size based on window width
     if (width < 1400) {
         logo.style.width = '60vw';
-        text.style.fontSize = '1.5vw';
+        text.style.fontSize = '2.5vw';
     } else {
         logo.style.width = '25vw';
         text.style.fontSize = '1vw';
