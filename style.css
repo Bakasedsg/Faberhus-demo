@@ -27,10 +27,10 @@ body {
 
 @keyframes breathing {
     0%, 100% {
-        background-size: 105%; /* Creates a subtle zooming effect */
+        background-size: 115%; /* Creates a subtle zooming effect */
     }
     50% {
-        background-size: 110%; /* Increases zoom effect at 50% */
+        background-size: 120%; /* Increases zoom effect at 50% */
     }
 }
 
@@ -71,11 +71,11 @@ body {
     }
 
     .text {
-        font-size: 0.8vw; /* Adjust text size for smaller screens */
+        font-size: 0.9vw; /* Adjust text size for smaller screens */
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     body {
         background: url('phone.png') no-repeat center center fixed;
         background-size: cover; /* Ensures the background image covers the entire viewport */
@@ -86,6 +86,6 @@ body {
     }
 
     .text {
-        font-size: 1vw; /* Adjust text size for smaller screens */
+        font-size: 1.5vw; /* Adjust text size for smaller screens */
     }
 }
